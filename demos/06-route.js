@@ -8,11 +8,12 @@ const about = ctx => {
 };
 
 const main = ctx => {
-  ctx.response.body = 'Hello World';
+  ctx.response.type = "text/json"
+  ctx.response.body = `{"fek":"fe"}`;
 };
 
 app.use(route.get('/', main));
 app.use(route.get('/about', about));
-
 app.use(main);
+
 app.listen(3000);

@@ -1,19 +1,29 @@
 {
-  "name": "koa-demos",
+  "name": "KoaLearning",
   "version": "1.0.0",
   "description": "a collection of simple demos of Koa",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "r1": "node ./demos/01.js"
   },
-  "keywords": ["Koa", "Node"],
+  "repository": "",
+  "keywords": [
+    "Koa",
+    "Node"
+  ],
   "author": "Ruan Yifeng",
   "license": "ISC",
   "dependencies": {
+    "fs": "0.0.2",
     "fs.promised": "^3.0.0",
     "koa": "^2.3.0",
-    "koa-body": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
     "koa-compose": "^4.0.0",
     "koa-route": "^3.2.0",
-    "koa-static": "^4.0.1"
+    "koa-router": "^7.2.1",
+    "koa-static": "^4.0.1",
+    "mime": "^2.0.3",
+    "mz": "^2.7.0",
+    "nunjucks": "^3.0.1"
   }
 }
