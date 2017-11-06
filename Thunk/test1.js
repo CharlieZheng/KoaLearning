@@ -1,5 +1,5 @@
 const fs =require( "fs")
-/*fs.readFile("test.js", function (err, res) {
+/*fs.readFile("test1.js", function (err, res) {
     console.log(res.toString())
 })*/
 
@@ -8,7 +8,7 @@ const thunk = function (name) {
         return fs.readFile(name, cb)
     }
 }
-thunk("test.js")( function (err, res) {
+thunk("test1.js")( function (err, res) {
     console.log(res.toString())
 })
 
