@@ -1,0 +1,1 @@
+console.log(/ht/.exec("http://www.baidu.com"))
