@@ -1,0 +1,22 @@
+.menu {
+    display: flex;
+    flex-flow: column;
+    align-self: stretch;
+
+    background: #666;
+    min-width: 150px;
+}
+
+.menu-module {
+    color: #EEE;
+    cursor: pointer;
+}
+
+.menu-module:hover {
+    background: #999;
+}
+
+.menu-module > a {
+    display: flex;
+    padding: 10px;
+}

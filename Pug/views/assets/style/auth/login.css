@@ -1,0 +1,118 @@
+/*-- 清空样式 start --*/
+* {
+    box-sizing: border-box;
+}
+
+body, button, input, select, textarea {
+    font: 16px "PingFang SC", "Microsoft Sans Serif", sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, button, input, textarea, /* form elements 表单元素 */
+th, td,
+iframe {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+iframe {
+    width: auto;
+    min-width: 0;
+}
+
+/* 重置列表元素 */
+ul, ol {
+    list-style: none;
+}
+
+/* 重置文本格式元素 */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+
+/*-- 清空样式 end --*/
+
+html, body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background: #FEC;
+}
+
+#container {
+    display: flex;
+    flex-flow: column;
+    padding: 10px 30px;
+
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .1);
+}
+
+.error {
+    background: #FCC;
+    color: #F44;
+
+    padding: 5px;
+    border: #F44 1px solid;
+}
+
+form {
+    margin: 10px 0;
+
+    display: flex;
+    flex-flow: column;
+}
+
+form table {
+    width: 100%;
+}
+
+form table td {
+    padding: 5px 0;
+}
+
+form table tr > td:first-child {
+    width: 0;
+    padding-right: 10px;
+}
+
+form label {
+    word-break: keep-all;
+}
+
+tr > td:nth-child(2) {
+}
+
+tr > td:nth-child(2) > input {
+    min-width: 20em;
+    width: 100%;
+    padding-left: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 5px;
+
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #7CF;
+    color: #FFF;
+}
+
+input[type="submit"]:hover {
+    background-color: #9EF;
+}

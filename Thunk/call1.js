@@ -1,7 +1,9 @@
 "use strict"
-this.num = "Hello, it's me."
+const {randomBytes} = require("crypto")
 
-// name = "call1.js"
+/*
+this.num = "Hello, it's me."
+var name = "call1.js"
 var age = 10
 var kk = {
     child() {
@@ -10,7 +12,8 @@ var kk = {
 }
 kk.child()
 
-console.log(this);
-console.log(this.num);
-console.log(global.name);
-console.log(age);
+console.log(this)
+console.log(this.num)
+console.log(global.name)
+console.log(age)*/
+console.log(randomBytes(4).toString("hex"))

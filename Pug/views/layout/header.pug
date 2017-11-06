@@ -1,0 +1,30 @@
+header#header.hero-head
+    nav.navbar
+        .navbar-brand
+            a.navbar-item(href="/") 范特西
+            .navbar-burger.burger(@click="toggleMenu", :class="{ 'is-active': isMenuActive }")
+                span
+                span
+                span
+
+        .navbar-menu(:class="{ 'is-active': isMenuActive }")
+            .navbar-end
+                - const getableModules = _.filter(user.permissions, { get: true, moduleIsShow: true })
+                each m in getableModules
+                    a.navbar-item(class={ "is-active": module && module.id === m.moduleId }, href=m.moduleEntry)= m.moduleName
+                span.navbar-item.is-hidden-mobile= user.username
+                a.navbar-item(href="/auth/logout") 注销
+
+append body
+    script.
+      new Vue({
+        el: '#header',
+        data: {
+          isMenuActive: false
+        },
+        methods: {
+          toggleMenu: function () {
+            this.isMenuActive = !this.isMenuActive
+          }
+        }
+      })

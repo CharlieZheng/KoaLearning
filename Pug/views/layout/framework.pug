@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        block head
+            title 范特西后台管理
+
+            meta(name="viewport" content="width=device-width, initial-scale=1")
+
+            script: include ../assets/script/vue.min.js
+
+            style: include ../assets/style/common/bulma.min.css
+
+            style.
+                #main {
+                    align-items: stretch;
+                    flex-direction: column;
+                }
+
+    body.hero.is-fullheight
+        block body
+            include header
+
+            include content
+
+            include footer
