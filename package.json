@@ -4,7 +4,7 @@
   "description": "a collection of simple demos of Koa",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "r1": "node ./demos/01.js"
+    "r1": "node ./demos/02.js"
   },
   "repository": "",
   "keywords": [
