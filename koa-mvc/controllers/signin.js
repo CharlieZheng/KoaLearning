@@ -1,7 +1,6 @@
-
 const _2 = async (ctx, next) => {
     let email = ctx.request.body.email || "",
-        psw = ctx.request.body.psw || ""
+        psw = ctx.request.body.password || ""
     if (email === "admin@example.com" && psw === "123456") {
         ctx.render("signin-ok.html", {
             title: "Sign In OK",
@@ -14,4 +13,4 @@ const _2 = async (ctx, next) => {
     }
 }
 
-module.exports={"POST /signin":_2}
+module.exports = {"POST /signin": _2}
