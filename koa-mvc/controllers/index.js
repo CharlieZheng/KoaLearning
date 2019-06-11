@@ -4,4 +4,4 @@ const _1 = async (ctx, next) => {
     })
 }
 
-module.exports={"GET /":_1}
+module.exports = {"GET /": _1}

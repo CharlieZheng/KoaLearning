@@ -1,4 +1,4 @@
-let mysql = require('mysql')
+let mysql = require('promise-mysql')
 let mysql_config = require('./mysql_config.js')
 
 let pool = mysql.createPool(mysql_config)
