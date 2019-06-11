@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据表管理</title>
+    <style>
+        .mForm {
+            background: #fcf8e3;
+        }
+
+        .left {
+            text-align-last: justify;
+            width: 70px;
+            float: left;
+            margin-right: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+<p>use cgf;</p>
+
+<form action="/create_table">
+    <button type="submit">创建 user 表</button>
+</form>
+<p>
+<form class="mForm" action="/user/insert">
+    <div class="left">用户 id</div>
+    <input name="user_id"><br/>
+    <div class="left">用户名称</div>
+    <input name="user_name"><br/>
+    <div class="left">用户手机</div>
+    <input name="user_phone"><br/>
+    <button type="submit" formmethod="post">插入一条 user 数据</button>
+</form>
+</p>
+<p>create table user()</p>
+
+</body>
+</html>

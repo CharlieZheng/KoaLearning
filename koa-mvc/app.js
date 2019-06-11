@@ -32,5 +32,7 @@ app.use(templating("views", {
     noCache: !isProduction,
     watch: !isProduction
 }))
+
 app.use(controller())
+app.use(controller(`data_source`))
 app.listen(3000)
