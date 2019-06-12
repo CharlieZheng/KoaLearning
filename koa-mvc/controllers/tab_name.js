@@ -6,8 +6,6 @@ let getTabList = async (ctx, next) => {
     ctx.response.code = 200
     ctx.response.type = "text/json"
     // https://segmentfault.com/q/1010000009544146/
-    ctx.append('Access-Control-Allow-Origin', '*')
-    ctx.append('Access-Control-Request-Method', 'GET')
 
 
 }
