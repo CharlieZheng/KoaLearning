@@ -1,8 +1,13 @@
-export const ENV_PRODUCTION = process.env.NODE_ENV === 'production'
-export const WEB_URL = ''
-export const PRODUCT_NAME = '现金贷'
+'use strict';
 
-export const MYSQL = ENV_PRODUCTION ? {
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+const ENV_PRODUCTION = exports.ENV_PRODUCTION = process.env.NODE_ENV === 'production';
+const WEB_URL = exports.WEB_URL = '';
+const PRODUCT_NAME = exports.PRODUCT_NAME = '现金贷';
+
+const MYSQL = exports.MYSQL = ENV_PRODUCTION ? {
     ADM: {
         username: 'root',
         password: 'uihr77YPb5EmerHcB39IbPFEAcEyash1',
@@ -38,7 +43,6 @@ export const MYSQL = ENV_PRODUCTION ? {
     },
     IOU: {
 
-
         host: 'localhost',
         port: 3306,
         database: "cgf",
@@ -55,9 +59,9 @@ export const MYSQL = ENV_PRODUCTION ? {
         port: 3306,
         pool: {maxConnections: 5, maxIdleTime: 3000}
     }
-}
+};
 
-export const REDIS = ENV_PRODUCTION ? {
+const REDIS = exports.REDIS = ENV_PRODUCTION ? {
     host: 'redis.server.com',
     port: 6379,
     password: 'aX6yHZu3N6Q1gAvd0XhtckEnBxs3Rlvh'
@@ -65,16 +69,16 @@ export const REDIS = ENV_PRODUCTION ? {
     host: 'www.server.com',
     port: 6379,
     password: ''
-}
+};
 
-export const TOKEN = {
+const TOKEN = exports.TOKEN = {
     SECRET_KEY: '$su>S$D~',
     EXPIRES_DAYS: 7
-}
+};
 
-export const HASHKEY = '1*WmG.>o?}'
+const HASHKEY = exports.HASHKEY = '1*WmG.>o?}';
 
-export const WECHAT = {
+const WECHAT = exports.WECHAT = {
     WECHAT: ENV_PRODUCTION ? {
         APPID: '',
         APPSECRET: '',
@@ -110,23 +114,23 @@ export const WECHAT = {
         NOTIFY_URL: `${WEB_URL}/api/common/payments/callback/app`
     },
     JS_API_LIST: ['onMenuShareAppMessage', 'chooseWXPay']
-}
+};
 
-export const CONFIG_VALUE_TYPE = {
+const CONFIG_VALUE_TYPE = exports.CONFIG_VALUE_TYPE = {
     STRING: 'STRING',
     NUMBER: 'NUMBER',
     BOOLEAN: 'BOOLEAN',
     OBJECT: 'OBJECT'
-}
+};
 
-export const COMPANY = {
+const COMPANY = exports.COMPANY = {
     NAME: '',
     CREDIT_CODE: ''
-}
+};
 
-export const VERIFY_REAL_CONFIG = {
+const VERIFY_REAL_CONFIG = exports.VERIFY_REAL_CONFIG = {
     name: 'kkiou',
     token: 'sgjW1XlK67yPCCp6xyIVfifUPcdjAGVp',
     factor2url: 'http://api.zneuron.com/api/check/factor2',
     bfactor4url: 'http://api.zneuron.com/api/check/bfactor4'
-}
+};

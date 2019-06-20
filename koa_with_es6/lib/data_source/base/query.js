@@ -1,6 +1,6 @@
 'use strict';
 
-let mysql = require('promise-mysql');
+let mysql = require('mysql');
 let mysql_config = require('./mysql_config.js');
 
 let pool = mysql.createPool(mysql_config);
@@ -16,4 +16,4 @@ let query = (sql, val) => {
         });
     });
 };
-module.exports = { query };
+module.exports = {query};
